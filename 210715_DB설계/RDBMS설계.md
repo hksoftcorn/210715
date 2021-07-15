@@ -108,9 +108,21 @@
 
 ## 3. 추가 Tip
 
-- 반정규화는 쉽게 할 수 있지는 않다,, 건들지 말자,,
-- vchar 사용은 문제가 있을 수 있음
-- database time은 vchar 보다 unix_time 을 사용합니다.
+1. 반정규화 => 무결성이 깨짐 => 데이터 구조의 오류를 허용
+2. 반정규화 하면 서버 성능 이득이 있는 반면, 미래에 데이터 오류 발생 가능성 큼,
+3. 반정규화는 고수가 아니면 자제, 차라리 하드웨어 증설할 것
+
+=============================================== 
+
+- DB 에서 시간 column 은 varchar 사용하지 말고 unix_time 같은 시간 type 사용 할 것, 그렇치 않으면 최근 일주일 검색 같은 query 문 만들기 어려워짐 
+
+- varchar - 2020051221 (X) unix_time - 1594034034 (O)
+
+- 시간 관련 data type - https://m.blog.naver.com/nieah914/221810697040
+
+- 테이블 설계에서 key는 varchar 같은 type 사용 (x), int  같은 정수 type 만 사용 모든 테이블에 id, num 같은 column 을 key 로 사용하기를 추천, 그러면 일관된 규칙으로 테이블 사용하기 쉬워짐 - https://stackoverflow.com/questions/2103322/varchar-as-foreign-key-primary-key-in-database-good-or-bad
+
+===================================================
 
 
 
