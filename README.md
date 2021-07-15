@@ -6,9 +6,9 @@
 
 ## ✨ 오늘 배운 내용
 
-- [프로젝트를 위한 DB 설계하기](./210715_DB설계/[프로젝트를 위한 RDBMS 설계방법.md](https://github.com/hksoftcorn/210715/blob/master/210715_DB설계/프로젝트를 위한 RDBMS 설계방법.md))
+- [프로젝트를 위한 DB 설계하기](./210715_DB설계/프로젝트를 위한 RDBMS 설계방법.md)
 
-
+- 
 
 
 
